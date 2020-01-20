@@ -12,7 +12,7 @@ import xlrd
 class getExcelData(object):
     def __init__(self):
     # 2-打开目标文件
-        readbook = xlrd.open_workbook('F:\VIP4_interfacetest\\testData\data.xls')
+        readbook = xlrd.open_workbook('F:\接口学习\VIP4_interfacetest\\testData\data.xls')
     #3-定位sheet页
         self.urlSheet = readbook.sheet_by_name('urlSheet')
         self.urlNum = self.urlSheet.nrows
